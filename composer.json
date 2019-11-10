@@ -6,8 +6,8 @@
     },
     "autoload": {
       "psr-4": {
-        "GPBMetadata\\" : "./src/Acme/Protobuf/GPBMetadata/",
-        "Example\\"     : "./src/Acme/Protobuf/Example/"
+        "Acme\\Protobuf\\GPBMetadata\\" : "./src/Acme/Protobuf/GPBMetadata/",
+        "Acme\\Protobuf\\Example\\"     : "./src/Acme/Protobuf/Example/"
       }
     }
 }
