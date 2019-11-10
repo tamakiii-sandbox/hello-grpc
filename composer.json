@@ -3,5 +3,11 @@
     "require": {
         "grpc/grpc": "^1.25",
         "google/protobuf": "^3.10"
+    },
+    "autoload": {
+      "psr-4": {
+        "GPBMetadata\\" : "./src/Acme/Protobuf/GPBMetadata/",
+        "Example\\"     : "./src/Acme/Protobuf/Example/"
+      }
     }
 }

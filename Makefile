@@ -1,6 +1,6 @@
 
 all: proto/php proto/grpc
-	protoc --proto_path=./proto --php_out=./proto/php --php-grpc_out=./proto/grpc ./proto/src/*.proto
+	protoc --proto_path=./proto --php_out=./src/Acme/Protobuf --php-grpc_out=./proto/grpc ./proto/src/*.proto
 
 proto/php:
 	mkdir -p $@
