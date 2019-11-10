@@ -1,6 +1,7 @@
 FROM php:7.2-fpm-alpine
 
-RUN apk add --no-cache make && \
+RUN set -xe && \
+    apk add --no-cache make zip && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # FROM prooph/php:7.3-zts
@@ -23,3 +24,5 @@ RUN apk add --no-cache make && \
 #
 # # Set up the command arguments
 # CMD ["php","--v"]
+
+# ENTRYPOINT ["rr-grpc serve -v -d"]
