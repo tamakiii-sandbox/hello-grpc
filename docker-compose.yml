@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  golang:
+    build: docker/golang
+    working_dir: /app
+    volumes:
+      - .:/app
+
+  php:
+    build: docker/php
+    working_dir: /app
+    volumes:
+      - .:/app
+

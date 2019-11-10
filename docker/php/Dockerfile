@@ -1,0 +1,25 @@
+FROM php:7.2-fpm-alpine
+
+RUN apk add --no-cache make && \
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# FROM prooph/php:7.3-zts
+#
+# RUN apk add --no-cache --virtual .persistent-deps \
+#     php7-dev \
+#     libc-dev \
+#     make \
+#     gcc \
+#     g++ \
+#     git \
+#     unzip \
+#     openssh \
+#     libzip-dev
+#
+# RUN set -xe \
+#     && docker-php-ext-install zip \
+#     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+#     && composer global require hirak/prestissimo
+#
+# # Set up the command arguments
+# CMD ["php","--v"]
