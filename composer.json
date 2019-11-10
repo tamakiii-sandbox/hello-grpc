@@ -2,7 +2,8 @@
     "name": "tamakiii-sandbox/hello-grpc",
     "require": {
         "grpc/grpc": "^1.25",
-        "google/protobuf": "^3.10"
+        "google/protobuf": "^3.10",
+        "hirak/prestissimo": "^0.3.9"
     },
     "autoload": {
       "psr-4": {
