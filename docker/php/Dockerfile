@@ -1,7 +1,7 @@
 FROM php:7.2-fpm-alpine
 
 RUN set -xe && \
-    apk add --no-cache make zip && \
+    apk add --update --no-cache protobuf make zip && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # FROM prooph/php:7.3-zts

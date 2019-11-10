@@ -1,4 +1,7 @@
 {
     "name": "tamakiii-sandbox/hello-grpc",
-    "require": {}
+    "require": {
+        "grpc/grpc": "^1.25",
+        "google/protobuf": "^3.10"
+    }
 }
