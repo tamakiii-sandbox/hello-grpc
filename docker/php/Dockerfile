@@ -9,7 +9,10 @@ RUN curl https://getcomposer.org/download/1.10.1/composer.phar > /usr/local/bin/
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       libz-dev \
+      zip \
+      unzip \
       && \
+    apt-get autoremove -y && \
     apt-get clean
 
 RUN pecl install grpc && \
@@ -33,5 +36,3 @@ RUN apt-get update && \
       procps \
       && \
     apt-get clean
-
-RUN pecl install grpc
