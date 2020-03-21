@@ -11,7 +11,7 @@ services:
     # to cause all processes to run as this user. Once present, you can also simply
     # use the "remoteUser" property in devcontainer.json if you just want VS Code and
     # its sub-processes (terminals, tasks, debugging) to execute as the user. On Linux,
-    # you may need to ensure the UID and GID of the container user you create matches your 
+    # you may need to ensure the UID and GID of the container user you create matches your
     # local user. See https://aka.ms/vscode-remote/containers/non-root for details.
     # user: vscode
 
@@ -38,4 +38,4 @@ services:
     #   - seccomp:unconfined
 
     # Overrides default command so things don't shut down after the process ends.
-    command: /bin/sh -c "docker-entrypoint.dev.sh & while sleep 1000; do :; done"
+    command: /bin/sh -c "docker-entrypoint.sh & while sleep 1000; do :; done"
